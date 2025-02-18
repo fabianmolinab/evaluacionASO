@@ -1,6 +1,6 @@
-package org.example.business.dto;
+package org.example.business.dao.model;
 
-public class BSalida {
+public class DSalida {
     private String textoConvertido;
 
     public String getTextoConvertido() {
@@ -13,8 +13,9 @@ public class BSalida {
 
     @Override
     public String toString() {
-        return "BSalida{" +
+        return "DSalida{" +
                 "textoConvertido='" + textoConvertido + '\'' +
                 '}';
     }
+
 }

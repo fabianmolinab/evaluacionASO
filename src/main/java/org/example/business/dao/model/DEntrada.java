@@ -1,10 +1,7 @@
-package org.example.business.dto;
+package org.example.business.dao.model;
 
-public class BEntrada {
-    private String texto;
-
-    public BEntrada() {
-    }
+public class DEntrada {
+    private  String texto;
 
     public String getTexto() {
         return texto;
@@ -16,7 +13,7 @@ public class BEntrada {
 
     @Override
     public String toString() {
-        return "BEntrada{" +
+        return "DEntrada{" +
                 "texto='" + texto + '\'' +
                 '}';
     }

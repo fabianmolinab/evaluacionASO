@@ -1,11 +1,22 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import org.example.backend.ConvertirTexto;
+import org.example.facade.dto.EntradaDtoFacade;
+import org.example.facade.dto.SalidaDtoFacade;
+import org.example.facade.imp.ConvertidorTexto;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
 
+        ConvertidorTexto texto = new ConvertidorTexto();
+        SalidaDtoFacade salida = texto.convertirTexto(generarEntrada());
+
+        System.out.println(salida);
+    }
+
+    public static EntradaDtoFacade generarEntrada(){
+        EntradaDtoFacade entrada = new EntradaDtoFacade();
+        entrada.setTexto("Fabian");
+        return entrada;
     }
 }
